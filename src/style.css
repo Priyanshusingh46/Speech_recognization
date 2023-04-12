@@ -1,0 +1,97 @@
+.body{
+    margin:0px;
+    padding: 0px;
+    overflow-x:hidden;
+}
+.AppOuterContainer{
+    display: flex;
+justify-content: center;
+flex-direction: column;
+background: url("./Images/bg.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+overflow-x:hidden;
+min-height: 100vh;
+}
+#headingpara{
+    text-align: center;
+    color: #ffff;
+    flex-wrap: wrap;
+}
+
+.textwritten{
+    width: 75%;
+    border: 1px solid wheat;
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+}
+.buttondiv{
+    margin-left: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    width: 75%;
+}
+#buttonhai{
+    width: 25%;
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 8px;
+}
+
+/* media Query */
+@media only screen and (max-width:900px){
+    .textwritten {
+        margin-left: 139px;
+    }
+    .buttondiv {
+        margin-left: 139px;
+    }
+    #buttonhai {
+        width: 16%;
+        padding: 6px;
+        font-size: 15px;
+        border-radius: 8px;
+    }
+    
+}
+@media only screen and (max-width:600px){
+#headingpara {
+    text-align: center;
+    color: #ffff;
+    flex-wrap: wrap;
+    font-size: 16px;
+}
+.textwritten {
+    margin-left: 76px;
+    min-height: 29vh;
+}
+.buttondiv {
+    margin-left: 76px;
+}
+
+}
+@media only screen and (max-width:400px)
+{
+    #headingpara {
+        font-size: 10px;
+    }
+    #buttonhai {
+        width: 28%;
+        padding: 6px;
+        font-size: 10px;
+        border-radius: 8px;
+    }
+}
+@media only screen and (max-width:340px)
+{
+    .textwritten {
+        margin-left: 41px;
+        min-height: 29vh;
+    }
+    .buttondiv {
+        margin-left: 41px;
+    }
+}
